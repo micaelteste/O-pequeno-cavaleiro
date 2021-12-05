@@ -1,6 +1,90 @@
 <fable>
-	<page>
   
+	<page background="bg.png" soundtrack="intro.wav">
+  
+		<agent 
+      text="O pequeno Cavaleiro" font-size="20" x="20" y="460" 
+      width="400" />
     
+    <agent 
+      text="Era uma vez, um pequeno cavaleiro que recebeu uma carta de um amigo." 
+      x="20" y="400" width="300" />
+    
+    <agent 
+      text="Ele ficou muito muito surpreso, pois esse amigo tinha sumido a anos." 
+      x="20" y="350" width="300" />
+    
+    <agent 
+      text="Só que as notícias na carta não eram muito boas. O seu amigo tinha contraído uma doença mistériosa e precisava de ajuda para pegar a cura." x="20" y="270" width="300" />
+    
+    <agent 
+      text="O mais rápido que pôde ele foi ao encontro desse amigo." x="20" y="220" width="300"/>
+    
+		<agent img="block.png" x="250" y="-25" width="100" height="100" />
+		<agent img="13.png" x="430" y="150" width="75" height="50" />
+    
+		<agent img="Sign_2.png" x="430" y="200" width="50" height="50" on-touch="_GOTO_PAGE:2" />
+
+    <agent img="Idle (1).png" x="260" y="65" width="80" height="100" />
+  
   </page>
+  
+  <page background="bg.png" soundtrack="song.mp3">
+
+    <agent 
+      text="Oh não, um desafio pela frente..." font-size="18" x="20" y="450" 
+      width="400" />
+    
+    <agent 
+      text="Era uma vez, um pequeno cavaleiro que recebeu uma carta de um amigo." 
+      x="20" y="400" width="300" />
+    
+    <agent 
+      text="Ele ficou muito muito surpreso, pois esse amigo tinha sumido a anos." 
+      x="20" y="330" width="200" />
+
+    <agent img="1.png" x="0" y="0" width="100" height="100" />
+    <agent img="2.png" x="100" y="0" width="100" height="100" />
+    <agent img="2.png" x="200" y="0" width="100" height="100" />
+    <agent img="2.png" x="300" y="0" width="100" height="100" />
+    <agent img="2.png" x="400" y="0" width="100" height="100" />
+
+    <agent img="Idle (1).png" x="100" y="90" width="80" height="100" />
+    
+    <agent img="Sign_2.png" x="385" y="150" width="50" height="50" on-touch="_PREV_PAGE" />
+    <agent img="Tree_2.png" x="250" y="100" width="300" height="300" on-touch="cortada">
+      <cortada img="Tree_1.png" x="320" width="150" height="50" />
+    </agent>
+  
+  </page>
+  
+  <page background="bg.png" soundtrack="song.mp3">
+
+    <agent 
+      text="Oh não, um desafio pela frente..." font-size="18" x="20" y="450" 
+      width="400" />
+    
+    <agent 
+      text="Era uma vez, um pequeno cavaleiro que recebeu uma carta de um amigo." 
+      x="20" y="400" width="300" />
+    
+    <agent 
+      text="Ele ficou muito muito surpreso, pois esse amigo tinha sumido a anos." 
+      x="20" y="330" width="200" />
+
+    <agent img="1.png" x="0" y="0" width="100" height="100" />
+    <agent img="2.png" x="100" y="0" width="100" height="100" />
+    <agent img="2.png" x="200" y="0" width="100" height="100" />
+    <agent img="2.png" x="300" y="0" width="100" height="100" />
+    <agent img="2.png" x="400" y="0" width="100" height="100" />
+
+    <agent img="Idle (1).png" x="100" y="90" width="80" height="100" />
+    
+    <agent img="Sign_2.png" x="385" y="150" width="50" height="50" on-touch="_PREV_PAGE" />
+    <agent img="Tree_2.png" x="250" y="100" width="300" height="300" on-touch="cortada">
+      <cortada img="Tree_1.png" x="320" width="150" height="50" />
+    </agent>
+  
+  </page>
+  
 </fable>
