@@ -78,6 +78,21 @@
     <agent img="block.png" x="310" y="100" width="200" height="200" />
     
     <agent img="Idle (1).png" x="100" y="90" width="80" height="100" />
+    
+    <agent 
+      img="switchLock.png" x="340" y="100" width="20" 
+      height="75" on-touch="unlocked">		 
+    	
+      <unlocked img="switchUnlocked.png" />    
+    </agent>
+    
+    <agent 
+      img="locked.png" x="375" y="100" width="75" 
+      height="110" on-trigger="unlocked">
+    	
+      <unlocked img="unlocked.png" on-touch="open" />
+      <open img="open.png" />
+    </agent>
   
   </page>
   
