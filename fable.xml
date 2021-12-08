@@ -91,9 +91,42 @@
       height="110" on-trigger="unlocked">
     	
       <unlocked img="unlocked.png" on-touch="open" />
-      <open img="open.png" />
+      <open img="open.png" on-touch="_NEXT_PAGE" />
     </agent>
   
+  </page>
+
+	<page background="bg_lab.png" soundtrack="song.mp3">
+    
+    <agent text="Clique no painel de controle para desbloquear a porta" 
+      x="20" y="440" font-size="18" color="white" 
+      width="300" on-trigger="unlocked">
+      
+    	<unlocked text="Acesso liberado! agora clique na porta para abrir" />
+    </agent>
+
+    <agent 
+      text="Oh não, um desafio pela frente..." x="20" y="400" 
+      width="400" color="white" />
+    
+    <agent img="floor.png" x="0" y="0" width="100" height="100" />
+    <agent img="floor2.png" x="100" y="0" width="100" height="100" />
+    <agent img="floor2.png" x="200" y="0" width="100" height="100" />
+    <agent img="floor2.png" x="300" y="0" width="100" height="100" />
+    <agent img="floor3.png" x="400" y="0" width="100" height="100" />   
+        
+    <agent img="Barrel.png" x="20" y="100" width="50" height="60" />   
+    <agent 
+      img="locked.png" x="415" y="100" width="75" 
+      height="110" on-touch="open">
+    	
+      <open img="open.png" on-touch="_NEXT_PAGE" />
+    </agent>
+    
+    <agent img="Spike.png" x="400" y="100" width="100" height="100" />   
+  
+    <agent img="Idle (1).png" x="100" y="90" width="80" height="100" />
+    
   </page>
   
 </fable>
