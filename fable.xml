@@ -113,9 +113,8 @@
     <agent img="floor2.png" x="100" y="0" width="100" height="100" />
     <agent img="floor2.png" x="200" y="0" width="100" height="100" />
     <agent img="floor2.png" x="300" y="0" width="100" height="100" />
-    <agent img="floor3.png" x="400" y="0" width="100" height="100" />   
-        
-    <agent img="Barrel.png" x="20" y="100" width="50" height="60" />   
+    <agent img="floor3.png" x="400" y="0" width="100" height="100" />     
+    
     <agent 
       img="locked.png" x="415" y="100" width="75" 
       height="110" on-touch="open">
@@ -123,7 +122,16 @@
       <open img="open.png" on-touch="_NEXT_PAGE" />
     </agent>
     
-    <agent img="Spike.png" x="400" y="100" width="100" height="150" />   
+    <agent img="Spike.png" x="400" y="100" width="100" height="150" drop-zone="explode">
+    	<explode y="-200" />
+    </agent>   
+    
+    <agent 
+      img="Barrel.png" x="20" y="100" width="50" height="60" 
+      draggable="true" on-drop="explode" on-zone="outscreen" on-trigger="outscreen">
+    
+      <outscreen y="-200" /> 
+    </agent> 
   
     <agent img="Idle (1).png" x="100" y="90" width="80" height="100" />
     
