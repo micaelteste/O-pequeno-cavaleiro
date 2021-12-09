@@ -128,12 +128,70 @@
     
     <agent 
       img="Barrel.png" x="20" y="100" width="50" height="60" 
-      draggable="true" on-drop="explode" on-zone="outscreen" on-trigger="outscreen">
+      draggable="true" on-drop="explode" on-zone="outscreen" 
+      on-trigger="outscreen">
     
       <outscreen y="-200" /> 
     </agent> 
   
     <agent img="Idle (1).png" x="100" y="90" width="80" height="100" />
+    
+  </page>
+  
+  <page background="bg.png" soundtrack="song.mp3">
+    
+    <agent 
+      text="Clique no painel de controle para desbloquear a porta" 
+      x="20" y="440" font-size="18" 
+      width="300" on-trigger="unlocked">
+      
+    	<unlocked text="Acesso liberado! agora clique na porta para abrir" />
+    </agent>
+
+    <agent 
+      text="Oh não, um desafio pela frente..." x="20" y="400" 
+      width="400" />
+    
+    <agent img="1.png" x="0" y="0" width="100" height="100" />
+    <agent img="2.png" x="100" y="0" width="100" height="100" />
+    <agent img="2.png" x="200" y="0" width="100" height="100" />
+    <agent img="2.png" x="300" y="0" width="100" height="100" />
+    <agent img="2.png" x="400" y="0" width="100" height="100" />     
+    
+    <agent 
+      img="chest.png" x="415" y="90" width="75" 
+      height="75" drop-zone="chestopen">
+    	
+      <chestopen y="-200" />
+    </agent>
+    
+    <agent 
+      img="key.png" x="20" y="150" width="50" height="50" 
+      draggable="true" on-drop="chestopen" on-zone="after-chestopen" 
+      on-trigger="after-chestopen">
+    	
+      <after-chestopen y="-200" />
+    </agent>   
+    
+    <agent img="box.png" x="10" y="100" width="50" height="50" />
+    <agent img="box.png" x="65" y="100" width="50" height="50" />
+    <agent img="box.png" x="20" y="150" width="50" height="50" draggable="true" />
+  
+    <agent img="Idle (1).png" x="120" y="90" width="80" height="100" />
+    
+  	<agent 
+      img="portion.png" x="430" y="-200" width="40" height="40" 
+      draggable="true" on-drop="lived" on-trigger="after-chestopen">
+    
+      <after-chestopen y="100" /> 
+    </agent> 
+    
+    <agent 
+      img="ninja_dead.png" x="300" y="90" width="100" height="100" 
+      drop-zone="lived">
+    
+      <lived img="ninja.png" />
+    </agent>
     
   </page>
   
